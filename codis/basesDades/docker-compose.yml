@@ -1,0 +1,17 @@
+version: '3.8' # Siempre es recomendable incluir la versión
+
+services: # Nivel 1 (sin indentación)
+  baseDades: # Nombre del servicio (2 espacios de indentación)
+    image: public.ecr.aws/docker/library/mysql:9.0 # 4 espacios de indentación
+    container_name: mysqlsrv # 4 espacios de indentación
+    environment: # 4 espacios de indentación
+      MYSQL_ROOT_PASSWORD: Fje25@ # 6 espacios de indentación
+      MYSQL_DATABASE: pj9f4a74 # 6 espacios de indentación
+    volumes: # 4 espacios de indentación
+      - vdades:/var/lib/mysql # 6 espacios de indentación (elemento de lista)
+    ports: # 4 espacios de indentación
+      - "3306:3306" # 6 espacios de indentación (elemento de lista)
+
+volumes: # Nivel 1 (sin indentación)
+  vdades: # Nombre del volumen (2 espacios de indentación)
+    # Aquí puedes añadir opciones si son necesarias
